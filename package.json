@@ -1,10 +1,9 @@
 {
   "name": "text-transformer",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Transform selected text",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-text-editor": [
       "text-transformer:camelize",
