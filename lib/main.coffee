@@ -27,11 +27,7 @@ module.exports =
     editor.mutateSelectedText (selection) ->
       return if selection.isEmpty()
       text = selection.getText()
-      selection.deleteSelectedText()
-      start = selection.cursor.getBufferPosition()
-      selection.insertText(_[command](text))
-      end = selection.cursor.getBufferPosition()
-      selection.setBufferRange([start, end])
+      selection.insertText(_[command](text), {select: true})
 
   sequential: ->
     editor = @getActiveTextEditor()
